@@ -24,6 +24,11 @@
 
 #define AK7755_CTRL_DEV "/dev/ak7755_ctrl"
 
+/**
+  * normal
+  * guard
+  * neighbor 
+  */ 
 #if 0
 enum cx2070x_ioctl_id {
 	CX2070X_IOCTL_NORMAL,
@@ -44,5 +49,11 @@ enum cx2070x_ioctl_id {
 	CX2070X_IOCTL_GET_VOL,
 	CX2070X_IOCTL_SET_VOL,
 	CX2070X_IOCTL_DAMP
+};
+#else
+enum ak7755_id {
+	AK7755_NORMAL_PATH,
+	AK7755_GUARD_PATH,
+	AK7755_NEIGHBOR_PATH
 };
 #endif
